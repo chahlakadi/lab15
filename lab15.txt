@@ -1,0 +1,15 @@
+Lab 5
+
+1. chahla=> tftp 0x81000000 zImage  
+chahla=> tftp 0x82000000 am355x -boneblack.dtb
+
+2. chahla=> bootz 0x81000000-0x82000000  
+
+3. chahla=> setenv bootcmd 'tftp 0x81000000 zImage ; tftp 0x82000000 am355x -boneblack.dtb  ; bootz 0x81000000-0x82000000 '
+
+- il plant car il manque le root file system
+
+4. chahla=>  printenv bootcmd
+
+reset et le npyeau se charge automatiquement
+
